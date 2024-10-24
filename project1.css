@@ -1,0 +1,468 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+ul {
+    display: flex;
+}
+
+ul li {
+    /* list-style-type: none; */
+    padding: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.section2 {
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+    animation: fadeIn;
+    animation-duration: 3s;
+   
+}
+
+.section2a {
+    font-size: calc(1.575rem + 3.9vw);
+    font-weight: 300;
+    line-height: 1.2;
+    animation: heartBeat;
+    animation-duration: 3s;
+}
+
+.btn {
+    padding: 10px !important;
+    letter-spacing: 3px !important;
+    color: #fefafa !important;
+    background-color: #0b0b0b !important;
+    font-size: large !important;
+    font-weight: 400 !important;
+}
+
+.section2b {
+    /* opacity: 0.5; */
+    height: 50vh;
+    width: 50vh;
+    animation: zoomIn;
+    animation-duration: 3s;
+}
+
+.section2b:hover {
+    transform: scale(0.8);
+    height: 100vh;
+    width: 100vh;
+}
+
+.section3 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    word-wrap: break-word;
+    background-color: rgb(248, 248, 134);
+
+}
+
+.section3 h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.section3:hover {
+    background-color: rgb(202, 247, 247);
+}
+
+.child1 {
+    text-align: justify;
+    background-color: white;
+    color: rgb(42, 41, 41);
+    font-weight: 100;
+    font-size: 30px;
+    padding: 10px;
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: tada;
+    animation-duration: 3s;
+    animation-delay: 3s;
+
+}
+
+.child2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns:25% 25% 25% 25%;
+    padding: 40px;
+    gap: 5px;
+    font-size: large;
+    animation: flipInX;
+    animation-duration: 3s;
+   
+}
+
+
+.section6 {
+    background-color: rgb(221, 248, 249);
+    padding: 4%;
+    background-image: url(images/iphone3.png);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+ 
+}
+.section7a{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.section7a .box .insta {
+    display: none; /* Hidden initially */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    color: whitesmoke;
+    background-color: rgba(4, 4, 4, 0.889);
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 0.5;
+}
+
+.section7a .box:hover .insta {
+    display: block; /* Shows when hovering */
+}
+
+/*  .box for the hover effect */
+.section7a .box {
+    position: relative; /* Position relative to handle absolute child (.insta) */
+    overflow: hidden; /* Ensure .insta stays within the box */
+}
+
+/* zoom effect to the image when hovering */
+.section7a .box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.section7a .box:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+.section8 {
+    background-color: rgb(221, 248, 249);
+    background-image: url(images/bg.png);
+    height: 30vh;
+    background-size: cover;
+}
+
+.section8a {
+    font-size: large;
+    padding: 5px;
+    text-shadow: 2px;
+    text-align: center;
+    text-decoration: aliceblue;
+    animation: slideInLeft;
+    animation-duration: 5s;
+    animation-delay: 5s;
+   
+}
+
+.section9 {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+   
+}
+
+.section9a {
+    color: antiquewhite;
+    font-size: calc(1.575rem + 1.9vw);
+    padding: 20px;
+}
+
+.section9b {
+    padding: 20px;
+}
+
+.section10a {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns:auto auto auto auto auto ;
+    padding: 10px;
+    gap: 5px;
+    animation: fadeIn;
+    animation-duration: 10s;
+  
+}
+ /* .insta is hidden by default */
+.section10a .box .insta {
+    display: none; /* Hidden initially */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    background-color: rgba(4, 4, 4, 0.889);
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 0.5;
+}
+
+/* Show the .insta when hovering over the .box */
+.section10a .box:hover .insta {
+    display: block; /* Shows when hovering */
+}
+
+/* .box for the hover effect */
+.section10a .box {
+    position: relative; /* Position relative to handle absolute child (.insta) */
+    overflow: hidden; /* Ensure .insta stays within the box */
+}
+
+/* Optional: Add a zoom effect to the image when hovering */
+.section10a .box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.section10a .box:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+
+.section11 {
+    
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 10px;
+    /* gap: 10px; */
+    font-weight: 300;
+    font-size: larger;
+    word-spacing: 5px;
+    list-style: lower-greek;
+  
+}
+
+input {
+    padding: 20px;
+    width: 400px;
+}
+/* THIS INPUT FOR FROM */
+
+
+.flip-card {
+    background-color: transparent;
+    width: 270px;
+    height: 250px;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    transition: 0.5S;
+}
+
+.flip-card-front,
+.flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgb(229, 228, 227);
+    border-radius: 1rem;
+}
+
+.flip-card-front {
+    background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%, rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+    color: rgb(0, 6, 7);
+    text-shadow: rgb(19, 43, 43);
+}
+
+.flip-card-back {
+    background: linear-gradient(120deg, rgb(248, 138, 98) 30%, rgb(244, 152, 119) 88%, rgb(220, 155, 76) 40%, rgb(255, 185, 160) 78%);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .section2, .section3, .section6 {
+        flex-direction: column;
+    }
+    .section2b {
+        width: 100%;
+        height: auto;
+    }
+    .btn {
+        font-size: medium !important;
+        padding: 8px !important;
+    }
+    .section9, .child2, .box2, .section10a, .section11 {
+        grid-template-columns: 1fr;
+        gap:70px;
+        padding: 30px;
+       
+    }
+    .box {
+        width: 100%; /* Full width for each box */
+        margin: auto; /* Center the boxes */
+    }
+    input {
+        width: 100%;
+    }
+}
+
+/* Small devices (600px and below) */
+@media screen and (max-width: 600px) {
+    .section9, .child2, .box2, .section10a, .section11,.section7a {
+        grid-template-columns: 1fr;
+        gap: 70px;
+        padding: 30px; 
+    }
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+        transition: 0.5S;
+    }
+    .box{
+        width: 100%;
+        margin: auto;
+    }
+    .container-fluid, .container, .section2, .section3, .section6 {
+        flex-direction: column;
+    }
+    .section2b {
+        width: 100%;
+        height: auto;
+    }
+    .btn {
+        font-size: medium !important;
+        padding: 8px !important;
+    }
+    input {
+        width: 100%;
+    }
+    .section8a{
+        
+    }
+}
+
+/* Base Navbar Styles */
+.navbar {
+    display: flex;
+    flex-basis: 20% 80%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    /* flex-direction: row;
+    justify-content: space-evenly; */
+    list-style-type: none;
+    /* margin-left: 500px; */
+    
+}
+
+.navbar ul li {
+    padding: 10px 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Cambria', serif;
+    font-size: large;
+}
+
+.navbar ul li a:hover {
+    color: #ff6347; /* Change color on hover */
+}
+
+
+.navbar .logo {
+    font-size: 1.8rem;
+    color: white;
+    font-family: 'Cambria', serif;
+    font-weight: bold;
+}
+
+
+/* Responsive Navigation Bar */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Hide by default */
+    }
+
+    .navbar ul.show {
+        display: flex; /* Show on click */
+    }
+
+    .navbar ul li {
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbar ul li a {
+        font-size: medium;
+    }
+
+    /* .menu-icon {
+        display: block;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    } */
+}
+
+/* Default: Hide Menu Icon */
+/* .menu-icon {
+    display: none;
+} */
